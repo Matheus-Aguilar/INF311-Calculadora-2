@@ -62,7 +62,7 @@
             android:id="@+id/buttonBackSpace"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:text="<<"
+            android:text="\u003c\u003c"
             android:onClick="clickBackSpaceButton"/>
     </LinearLayout>
 
@@ -155,7 +155,7 @@
 
         <Button
             android:id="@+id/button0"
-            android:layout_width="122dp"
+            android:layout_width="120dp"
             android:layout_height="60dp"
             android:text="0"
             android:tag="0"
