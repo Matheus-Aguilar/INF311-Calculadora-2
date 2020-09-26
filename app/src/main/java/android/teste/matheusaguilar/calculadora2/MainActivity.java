@@ -76,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
         if(parts[0].length() == 0)
             return;
         else if(parts.length == 1) {
-            if(parts[0].indexOf('.') == -1 && parts[0].length() > 0)
+            if(parts[0].indexOf('.') == -1 && parts[0].length() > 0 && !parts[0].equals("-"))
                 visorView.setText(parts[0] + '.');
         }
         else if(parts.length == 2)
             return;
         else if(parts.length == 3) {
-            if (parts[2].indexOf('.') == -1)
+            if (parts[2].indexOf('.') == -1 && !parts[2].equals("-"))
                 visorView.setText(parts[0] + ' ' + parts[1] + ' ' + parts[2] + '.');
         }
         else
